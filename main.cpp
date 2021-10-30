@@ -1,19 +1,11 @@
-#include <stdio.h>
-#include "mpi.h"
-#include "omp.h"
+#include "main.h"
 
-int myrank;
-int numrank;
+int main()
+{
+    read_simulationinput();
+    read_meshmodel();
+    genetare_constants();
+//    generate_octtree();
 
-int main(int argc, char** argv){
-
-  MPI_Init(&argc,&argv);
-  MPI_Comm_rank(MPI_COMM_WORLD,&myrank);
-  MPI_Comm_size(MPI_COMM_WORLD,&numrank);
-
-  printf("Hello World!\n");
-
-  MPI_Finalize();
-
-  return 0;
+    return 0;
 }
