@@ -2,12 +2,12 @@
 
 ## Run 
 
-Edit input parameters and run the application using run script. Update one of the run scripts for your system.
+Edit input parameters and run the application using run script.
 
 ```bash
-LEAFBOX: Leaf-level box sizea (in wavelengths)
-MODELFILE: Model file path
-SCALE: Scaling factor
+export LEAFBOX: Leaf-level box sizea (in wavelengths)
+export MODELFILE: Model file path
+export SCALE: Scaling factor
 
 #RUN COMMAND COMES HERE
 ```
