@@ -3,6 +3,7 @@
 ## Design Principles 
 
 - Dimensions are normalized to wavelength.
+- No exception handling in the code for brevity.
 
 ## Run 
 
