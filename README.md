@@ -1,5 +1,9 @@
 # MLFMA
 
+## Design Principles 
+
+- Dimensions are normalized to wavelength.
+
 ## Run 
 
 Edit input parameters and run the application using run script.
