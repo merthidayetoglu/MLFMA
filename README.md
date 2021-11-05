@@ -16,6 +16,3 @@ export SCALE: Scaling factor
 #RUN COMMAND COMES HERE
 ```
 
-##To-Dos
-
-- Read model file and build tree structure in parallel.
