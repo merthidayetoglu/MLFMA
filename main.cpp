@@ -26,7 +26,7 @@ int main(int argc, char** argv) {
   if(omp_get_thread_num() == 0)
     numthread = omp_get_num_threads();
 
-  //INPUT PARAMETERS
+  //READ INPUT PARAMETERS
   char *chartemp;
   chartemp = getenv("LEAFBOX");
   double leafbox = atof(chartemp);
