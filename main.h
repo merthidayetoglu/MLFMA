@@ -36,7 +36,6 @@ int *num_children;
 double *box_pos;
 int *children;
 int *children2parent;
-int *rwg_ind;
 
 
 // Functions
