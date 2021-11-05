@@ -56,8 +56,7 @@ int main(int argc, char** argv) {
   nodepos = new double[numnode*3];
   fread(nodepos,sizeof(double),numnode*3,pFile);
   fclose(pFile);
-  for(int n = 0; n < numnode*3; n++)
-    nodepos[n] *= scalefactor;
+  for(int n = 0; n < numnode*3; n++) nodepos[n] *= scalefactor;
   MPI_Barrier(MPI_COMM_WORLD);
   if(myrank == 0)printf("INPUT TIME: %e\n",MPI_Wtime()-timetemp);
 
