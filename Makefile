@@ -1,16 +1,16 @@
 # ----- Make Macros -----
 
 CXX = mpicxx
-CXXFLAGS = -std=c++11 -qreport -qsmp=omp -qlistfmt=html
-OPTFLAGS = -O3 -qarch=pwr9 -qtune=pwr9 -qstrict -qsimd=auto
+CXXFLAGS = -std=c++11 -fopenmp -I/usr/local/cuda/include
+OPTFLAGS = -O3 
 
 NVCC = nvcc
-NVCCFLAGS = -lineinfo -O3 -std=c++11 -gencode arch=compute_70,code=sm_70 -ccbin=mpicxx -Xcompiler -qsmp=omp -Xptxas="-v"
+NVCCFLAGS = -lineinfo -O3 -std=c++11 -gencode arch=compute_80,code=sm_80 -ccbin=mpicxx -Xcompiler -fopenmp -Xptxas="-v"
 
-LD_FLAGS = -ccbin=mpicxx -lcusparse -Xcompiler -qsmp=omp
+LD_FLAGS = -ccbin=mpicxx -Xcompiler -fopenmp 
 
 TARGETS = MLFMA
-OBJECTS = main.o
+OBJECTS = main.o 
 
 # ----- Make Rules -----
 
