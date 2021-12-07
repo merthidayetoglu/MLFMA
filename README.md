@@ -3,10 +3,11 @@
 ## Design Principles 
 
 - Dimensions are normalized to wavelength.
+- No exception handling in the code for brevity.
 
 ## Run 
 
-Edit input parameters and run the application using run script.
+Edit input parameters and run the application using run.sh script.
 
 ```bash
 export LEAFBOX: Leaf-level box size (in wavelengths)
